@@ -1,7 +1,14 @@
-* {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 20px;
+* {    
+}
+
+@font-face {
+    font-family:Comfortaa;
+    src: url("ttf/Comfortaa-Bold.ttf"), url("ttf/Comfortaa-Light.ttf");
+}
+
+@font-face {
+    font-family:Raleway;
+    src: url("ttf/Raleway-Medium.ttf");
 }
 
 body {
@@ -26,11 +33,16 @@ body {
 header {
     height: 12%;
     background-color: #FF0000;
+    font-size: 28px;
+    font-family:"Comfortaa", sans-serif;
 }
+
 
 nav {
     height: 5%;
     background-color: #00FF00;
+    font-size: 18px;
+    font-family:"Comfortaa", sans-serif;
 }
 
 #content {
@@ -42,6 +54,8 @@ article {
     height: 100%;
     float: left;
     background-color: #55AAFF;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;    
 }
 
 aside {
@@ -49,9 +63,20 @@ aside {
     height: 100%;
     float: right;
     background-color: #FFFF55;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
 }
+
 
 footer {
     height: 7%;
     background-color: #AA00EE;
+    font-size: 13px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+.base {
+    padding: 10px;
 }

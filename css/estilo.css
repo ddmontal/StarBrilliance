@@ -1,0 +1,151 @@
+* {    
+}
+
+@font-face {
+    font-family:Comfortaa-Bold;
+    src: url("../ttf/Comfortaa-Bold.ttf");
+}
+
+@font-face {
+    font-family:Comfortaa-Light;
+    src: url("../ttf/Comfortaa-Light.ttf");
+}
+
+@font-face {
+    font-family:Raleway;
+    src: url("../ttf/Raleway-Medium.ttf");
+}
+
+body {
+    background-color: #FFF;
+}
+
+/*Para centrado vertical de elementos.*/
+.CentradoVertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#pagina {
+    height: 100%;
+    min-height: 650px;
+    width: 70%;
+    min-width: 920px;
+    margin: 0px auto;
+    background-color: #EEEEEE;
+    box-shadow: 0px 0px 26px 5px #BABABA;
+    border-radius: 5px;
+}
+
+/*Clase base para el contenido de la estructura de la página*/
+.base {
+    padding: 10px;
+    overflow: hidden;
+}
+
+header {
+    height: 12%;
+    min-height: 78px;    
+    background-color: transparent;
+    font-size: 28px;
+    font-family: "Comfortaa-Bold", sans-serif; 
+    margin: 0px;
+}
+
+#titulo {
+    float: left;
+    margin: 0;
+    text-align: center;
+    
+}
+
+#logo {
+    float: left;
+    margin: 0;
+    width: 15%;
+    height: 90%;
+    background-image: url("../imagenes/logo_256.png");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    height: 5%;
+    min-height: 32px;
+    background-color:#555;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: "Comfortaa-Bold", sans-serif;
+    margin: 0px;
+}
+
+#menu {
+}
+
+#menu div {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 2px 3px;
+    border-radius: 4px;
+}
+
+#menu a.actual {
+    background-color: #FFAA00;
+}
+
+#menu a:hover {
+    background-color: #FFAA00;
+}
+
+#contenido {
+    height: 76%;
+    min-height: 494px;
+}
+
+article {
+    width: 85%;
+    height: 100%;
+    float: left;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;   
+    
+}
+
+aside {
+    width: 15%;
+    height: 100%;
+    float: right;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    height: 7%;
+    min-height: 46px;
+    font-size: 13px;
+    font-family: 'Comfortaa-Light', sans-serif;
+}
+
+#autor{
+    float: left;
+}
+
+#info {
+    float:right;
+}
+
+#cl {
+    display: inline-block;
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}

@@ -20,3 +20,20 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
     Author     : David
 */
 
+body {
+    /*Para evitar que el mapa descuadre la pagina, se establece el ancho minimo del cuerpo a 600px*/
+    min-width: 600px;
+}
+
+#datosDonde {
+    float: left;
+    clear: both;
+    width: 35%;
+}
+
+#mapa {
+    float: right;
+    width: 400px;
+    height: 300px;        
+}
+

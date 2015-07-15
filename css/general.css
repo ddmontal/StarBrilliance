@@ -25,6 +25,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #fondo {    
     box-shadow: 0 0 6vh #333;
     background-color: #f9f9f9;
+    border-radius: 0.45rem 0.45rem 0rem 0rem;
     padding: 0;
     margin: 0 auto;
     width: 95%;
@@ -37,21 +38,19 @@ header, nav, footer {
 }
 
 header {
-/*    background: -webkit-linear-gradient(#ccc, #f9f9f9 90%);
-    background: -moz-linear-gradient(#ccc, #f9f9f9);
-    background: -o-linear-gradient(#ccc, #f9f9f9);*/
-    background-image: linear-gradient(to bottom, #ccc 0%, #f9f9f9 100%); /*Necesario para IE*/
+    background-image: linear-gradient(to bottom, #ccc 0%, #f9f9f9 100%);
     height: 13vh;
     font-size: 2rem;
+    border-radius: 0.45rem 0.45rem 0rem 0rem;
     font-family: "Comfortaa-Bold", sans-serif; 
 }
 
 #logo {
     display: table-cell;
     text-align: right;
-    padding-right: 5%;
-    margin: 1vh 1%;
-    background-image: url(../imagenes/logo_276.png);
+    padding-right:40%;
+    margin: auto;
+    background-image: url(../imagenes/logo_text.png);
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -121,30 +120,73 @@ Enlaces del menú.
 }
 
 #contenido {
-    /*height: 70vh;*/    
+    height: 70vh;
     font-size: 0.82rem;
+    overflow: auto;
 }
 
 article#pagina { 
+    float: left;
     overflow: auto;
-    display: table-cell;
-    width: 75%; 
+    width: 80%; 
     padding: 2vh 2vw; 
 }
 
 #lado {
-    overflow: auto;
+    overflow: hidden;
+    text-align: right;
     display: table-cell;
-    text-align: center;
-    width: 25%;
-    height: 70vh;
+    width: 10%;
+    padding-top: 1rem;
+    margin: 0;
+    padding-right: 5%;
 }
+
+#lado div { 
+    float: right;
+    clear: both;    
+    box-shadow: 0 0 1vh #333; 
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+#delicious {
+    background-image:url("../imagenes/delicious.png"); 
+}
+
+#digg { 
+    background-image:url("../imagenes/digg.png"); 
+}
+#facebook { 
+    background-image:url("../imagenes/facebook.png"); 
+}
+#flickr { 
+    background-image:url("../imagenes/flickr.png"); 
+}
+#linkedin { 
+    background-image:url("../imagenes/linkedin.png"); 
+}
+#reddit { 
+    background-image:url("../imagenes/reddit.png"); 
+}
+#rss { 
+    background-image:url("../imagenes/rss.png"); 
+}
+#twitter { 
+    background-image:url("../imagenes/twitter.png"); 
+}
+
+#contenido {
+        height: 65vh; 
+}
+
+#pagina { 
+        height: 65vh; 
+}  
 
 footer {
     display: table;    
-/*    background: -webkit-linear-gradient(#f9f9f9, #ccc);
-    background: -moz-linear-gradient(#f9f9f9, #ccc);
-    background: -o-linear-gradient(#f9f9f9, #bbb);*/
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #ccc 100%); /*Necesario para IE*/
     height: 6vh;
     font-size: 0.8rem;  
@@ -180,15 +222,9 @@ footer {
     margin-top: 1vh;
 }
 
-/*
-Gira el contenido del bloque.
-Para poder poner el simbolo de copyleft (&copy; al reves).
-*/
 .girar180 {
     font-family: sans-serif;
     display: inline-block;
-/*    -moz-transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);*/
     transform: rotate(-180deg);
 }
 
@@ -203,7 +239,7 @@ Para poder poner el simbolo de copyleft (&copy; al reves).
 
 a, a:visited {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: lighter;
     color: #7F5500;
     text-decoration: underline;
 }
@@ -233,4 +269,24 @@ a, a:visited {
     font-size: 1.00rem; 
     /*font-style: italic;*/
     color: #666;
+}
+
+section a {
+    color:#7F5500;
+    transition: all 400ms ease;
+}
+
+section a:hover {
+    color:#FFAA00;
+    transition: all 400ms ease;
+}
+
+
+.item-img, .imagen {			
+    background-color: #666666;
+    border-radius: 0.5rem;
+    z-index:0;		
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
 }

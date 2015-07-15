@@ -4,11 +4,12 @@
         <link rel="stylesheet" href="./css/fuentes.css" type="text/css" />
         <link rel="stylesheet" href="./css/general.css" type="text/css" />
         <link rel="stylesheet" href="./css/animaciones.css" type="text/css" />
-        <link rel="stylesheet" href="./css/index.css" type="text/css" />
+        <link rel="stylesheet" href="./css/contacto.css" type="text/css" />
+        
         <title>Inicio</title>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
     </head>
     <body>
         <div id="fondo">
@@ -19,32 +20,69 @@
             <nav id="menu">
                 <div class="centrarVertical">
                     <ul class="menuAnimacion">
-                        <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion actual" href="index.html">Inicio</a></li> 
+                        <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="index.html">Inicio</a></li> 
                         <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="ofertas.html">Ofertas</a></li> 
                         <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="ultima.html">Última hora</a></li> 
                         <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="aventura.html">Aventura</a></li> 
                         <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="donde.html">Donde encontrarnos</a></li> 
-                        <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="contacto.html">Contacto</a></li> 
+                        <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion actual" href="contacto.html">Contacto</a></li> 
                     </ul>  
                 </div>
             </nav>
 
             <section id="contenido">
-                <article  id="pagina">
+                <article id="pagina">
                     <div class="titulo t1">
-                        Inicio
+                        Contacto
                     </div>
+                    
                     <div>
-                        Somos una agencia de viajes creada por un grupo de profesionales con amplia formación y experiencia en el sector turístico.
-                        Somos especialistas en viajes de esquí y en la creación de paquetes turísticos a la carta.
+                        Para realizar cualquier consulta, ponemos a su disposición un formulario de contacto.
+                        <br>
+                        Rellene dicho formulario y en breve nos pondremos en contacto con usted.
                     </div>
-                    <div>
-                        Además de encontrar las mejores ofertas, nos esforzamos para que nuestros clientes estén siempre informados sobre ellas.
-                        Semanalmente les enviamos un e-mail Con Las Mejores Ofertas
-                    </div>
-                    <br>
-                    <div id="carretera" class="imagen">                        
-                    </div>
+                    
+                    <form id="formContacto" autocomplete="off" action="#" method="post">
+                        <div class="dato">
+                            <label for="nombre">Nombre:</label>
+                            <input id="nombre" name="nombre" type="text" placeholder="Nombre y apellidos"/>
+                        </div>
+                        <div class="dato">
+                            <label for="email">E-Mail:</label>
+                            <input id="email" name="email" type="email" placeholder="xxxxx@xxxxx.com"/>
+                        </div>
+                        <div class="dato">
+                            <label for="telefono">
+                                Teléfono:
+                            </label>
+                            <input id="telefono" name="telefono" type="text" placeholder="xxxxxxxxx"/>
+                        </div>  
+                        <div class="dato">
+                            <label for="oficina">Oficina:</label>
+                            <select id="oficina" name="oficina">
+                                <option>Valladolid</option>
+                                <option>Madrid</option>
+                                <option>Segovia</option>
+                                <option>Salamanca</option>
+                            </select>
+                        </div>
+                        <div class="dato">
+                            <label for="asunto">Asunto:</label>
+                            <input id="asunto" name="asunto" type="text" placeholder="Escriba aquí el asunto de su consulta"/>
+                        </div>
+                        <div class="dato">
+                            <label for="consulta">Consulta:</label>
+                            <textarea id="consulta" name="consulta" placeholder="Escriba aquí su consulta"></textarea>
+                        </div>
+                        <div class="dato">
+                            <label for="aceptarTerminos">&nbsp;</label>
+                            <input id="aceptarTerminos" name="aceptarTerminos" type="checkbox">Acepto los términos
+                        </div>
+                        <div class="dato">
+                            <label>&nbsp;</label>
+                            <input type="submit" value="Enviar"/>
+                        </div>
+                    </form>
                 </article>
                 <aside id="lado" class="menuAnimacion">                      
                     <a class="opcionMenuAnimacion" href="http://www.delicious.com/">
@@ -81,7 +119,7 @@
                 </aside>
             </section>
 
-            <footer>    
+            <footer>   
                 <div class="margenTexto centrarVertical">   
                     <div id="info">
                         <div class="centrarVertical">

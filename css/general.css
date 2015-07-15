@@ -1,40 +1,34 @@
+/*
+Copyright (C) 2014 David
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+
 /* 
     Created on : 06-dic-2014, 16:49:20
-    Author     : David
+    Author     : David Montalvillo
 */
-
-/*
-Definición de fuentes para el texto.
-Se utiliza archivos .woff ya que los soporta cualquier navegador moderno.
-*/
-@font-face {
-    font-family:Comfortaa-Bold;
-    src: url("../fuentes/Comfortaa-bold.woff");
-}
-
-@font-face {
-    font-family:Comfortaa-Light;
-    src: url("../fuentes/Comfortaa-Light.woff");
-}
-
-@font-face {
-    font-family:OpenSans;
-    src: url("../fuentes/OpenSans-Regular.woff");
-}    
-
-body {
-    padding: 2vh 0;
-    margin: 0 auto;
-    width: 80vw;
-    color: #000;
-    font-size: 10pt;
-    font-family: 'OpenSans', sans-serif; 
-}
+ 
 
 #fondo {    
     box-shadow: 0 0 6vh #333;
     background-color: #f9f9f9;
     padding: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: 'OpenSans', sans-serif; 
 }
 
 header, nav, footer {    
@@ -43,10 +37,10 @@ header, nav, footer {
 }
 
 header {
-    background: -webkit-linear-gradient(#ccc, #f9f9f9 90%);
+/*    background: -webkit-linear-gradient(#ccc, #f9f9f9 90%);
     background: -moz-linear-gradient(#ccc, #f9f9f9);
-    background: -o-linear-gradient(#ccc, #f9f9f9);
-    background-image: linear-gradient(to bottom, #CCCCCC 0%, #F9F9F9 100%); /*Necesario para IE*/
+    background: -o-linear-gradient(#ccc, #f9f9f9);*/
+    background-image: linear-gradient(to bottom, #ccc 0%, #f9f9f9 100%); /*Necesario para IE*/
     height: 13vh;
     font-size: 2rem;
     font-family: "Comfortaa-Bold", sans-serif; 
@@ -60,7 +54,6 @@ header {
     background-image: url(../imagenes/logo_276.png);
     background-position: left;
     background-size: contain;
-    background-position-x: 1vw;
     background-repeat: no-repeat;
     color: #666666;
     width: 100%;
@@ -78,11 +71,11 @@ nav {
     border-radius: 0.2rem;
     box-shadow: 0 0 2vh #333;
     margin: 0 auto;    
-    margin-top: 1.5vh;
+    margin-top: 3vh;
     width: 98%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 170%;
-    font-family: "Comfortaa-Bold", sans-serif; 
+    font-family: "Comfortaa-Bold"; 
 }
 
 /*
@@ -128,20 +121,19 @@ Enlaces del menú.
 }
 
 #contenido {
-    height: 70vh;    
+    /*height: 70vh;*/    
     font-size: 0.82rem;
-    overflow: auto;
 }
 
-#pagina {
+article#pagina { 
+    overflow: auto;
     display: table-cell;
-    width: 75%;
-    height: 100vh;
-    height: 100%;  
-    padding: 2vh 2vw;  
+    width: 75%; 
+    padding: 2vh 2vw; 
 }
 
 #lado {
+    overflow: auto;
     display: table-cell;
     text-align: center;
     width: 25%;
@@ -150,10 +142,10 @@ Enlaces del menú.
 
 footer {
     display: table;    
-    background: -webkit-linear-gradient(#f9f9f9, #ccc);
+/*    background: -webkit-linear-gradient(#f9f9f9, #ccc);
     background: -moz-linear-gradient(#f9f9f9, #ccc);
-    background: -o-linear-gradient(#f9f9f9, #bbb);
-    background-image: linear-gradient(to top, #CCC 0%, #F9F9F9 100%); /*Necesario para IE*/
+    background: -o-linear-gradient(#f9f9f9, #bbb);*/
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #ccc 100%); /*Necesario para IE*/
     height: 6vh;
     font-size: 0.8rem;  
     font-family: 'Comfortaa-Light', sans-serif;
@@ -163,13 +155,29 @@ footer {
 #info {
     display: table-cell;
     text-align: left;
+    vertical-align: middle;
     width: 50vw;
+}
+
+#html5logo {
+    border:0;
+    height: 4.5vh;
+}
+
+#csslogo {
+    border:0;
+    height: 3vh;
 }
 
 #copyleft {
     display: table-cell;
     text-align: right;
     width: 50vw;
+}
+
+#copyleft .centrarVertical {
+    float: right;
+    margin-top: 1vh;
 }
 
 /*
@@ -179,8 +187,8 @@ Para poder poner el simbolo de copyleft (&copy; al reves).
 .girar180 {
     font-family: sans-serif;
     display: inline-block;
-    -moz-transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);
+/*    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);*/
     transform: rotate(-180deg);
 }
 
@@ -198,4 +206,31 @@ a, a:visited {
     font-weight: bold;
     color: #7F5500;
     text-decoration: underline;
+}
+
+
+.parrafo {
+    margin-bottom: 0.5rem;
+}
+
+.titulo {
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-family: Comfortaa-Light;
+}
+
+.t1 {
+    margin-top: 0;
+    font-size: 1.40rem;
+}
+
+.t2 {
+    font-size: 1.20rem;
+    color: #555;
+}
+
+.t3 {
+    font-size: 1.00rem; 
+    /*font-style: italic;*/
+    color: #666;
 }

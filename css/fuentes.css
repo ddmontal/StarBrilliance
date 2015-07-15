@@ -1,0 +1,41 @@
+/*
+Copyright (C) 2014 David Montalvillo
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+
+/* 
+    Created on : 21-Dec-2014, 15:41:37
+    Author     : David Montalvillo
+*/
+
+/*
+Definición de fuentes para el texto.
+Se utiliza archivos .woff ya que los soporta cualquier navegador moderno.
+*/
+@font-face {
+    font-family:Comfortaa-Bold;
+    src: url("../fuentes/Comfortaa-Bold.woff");
+}
+
+@font-face {
+    font-family:Comfortaa-Light;
+    src: url("../fuentes/Comfortaa-Light.woff");
+}
+
+@font-face {
+    font-family:OpenSans;
+    src: url("../fuentes/OpenSans-Regular.woff");
+}  

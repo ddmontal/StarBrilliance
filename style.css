@@ -1,0 +1,57 @@
+* {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #EFEFEF
+}
+
+/*Para centrado vertical de elementos.*/
+.CentradoVertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#page {
+    height: 100%;
+    width: 70%;
+    margin: 5px auto;
+    background-color: #AAAAAA;
+}
+
+header {
+    height: 12%;
+    background-color: #FF0000;
+}
+
+nav {
+    height: 5%;
+    background-color: #00FF00;
+}
+
+#content {
+    height: 76%;
+}
+
+article {
+    width: 85%;
+    height: 100%;
+    float: left;
+    background-color: #55AAFF;
+}
+
+aside {
+    width: 15%;
+    height: 100%;
+    float: right;
+    background-color: #FFFF55;
+}
+
+footer {
+    height: 7%;
+    background-color: #AA00EE;
+}

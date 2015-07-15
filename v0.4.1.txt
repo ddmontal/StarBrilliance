@@ -1,6 +1,0 @@
-﻿.LOG
-
-23:05 09/01/2015
-Añadida animacion de opacidad al menu.
-23:33 09/01/2015
-Añadidas resto de paginas.

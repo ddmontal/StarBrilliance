@@ -3,8 +3,9 @@
     <head>
         <link rel="stylesheet" href="./css/fuentes.css" type="text/css" />
         <link rel="stylesheet" href="./css/general.css" type="text/css" />
-        <link rel="stylesheet" href="./css/animacion_menu.css" type="text/css" />
+        <link rel="stylesheet" href="./css/animaciones.css" type="text/css" />
         <link rel="stylesheet" href="./css/thumbnail.css" type="text/css" />
+        <link rel="stylesheet" href="./css/ultima.css" type="text/css" />
         <title>Inicio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +14,18 @@
     <body>
         <div id="fondo">
             <header>
-                <div id="logo" class="centrarVertical">
-                    Viajes "Star Brilliance"
-                </div>
+                <div id="logo" class="centrarVertical"></div>
             </header>
 
             <nav id="menu">
                 <div class="centrarVertical">
-                    <ul id="opcion_menu">
-                        <li><a href="index.html">Inicio</a></li> 
-                        <li><a href="ofertas.html">Ofertas</a></li> 
-                        <li><a href="ultima.html" class="actual">Última hora</a></li> 
-                        <li><a href="aventura.html">Aventura</a></li> 
-                        <li><a href="donde.html">Donde encontrarnos</a></li> 
-                        <li><a href="contacto.html">Contacto</a></li> 
+                    <ul class="menuAnimacion">
+                        <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="index.html">Inicio</a></li> 
+                        <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="ofertas.html">Ofertas</a></li> 
+                        <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion actual" href="ultima.html">Última hora</a></li> 
+                        <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="aventura.html">Aventura</a></li> 
+                        <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="donde.html">Donde encontrarnos</a></li> 
+                        <li class="opcionMenuAnimacion"><a class="enlaceMenuAnimacion" href="contacto.html">Contacto</a></li> 
                     </ul>  
                 </div>
             </nav>
@@ -43,7 +42,7 @@
                                 <div class="item-info">
                                     <div class="headline titulo t1">Toronto</div>
                                     <div class="line"></div>
-                                    <div class="date">28 de Febrero<br>4000 €</div>
+                                    <div class="text date">28 de Febrero<br>4000 €</div>
                                 </div>
                                 <div class="mask"></div>
                             </a>
@@ -55,7 +54,7 @@
                                 <div class="item-info">
                                     <div class="headline titulo t1">Boston</div>
                                     <div class="line"></div>
-                                    <div class="date">28 de Febrero<br>4300 €</div>
+                                    <div class="text date">28 de Febrero<br>4300 €</div>
                                 </div>
                                 <div class="mask"></div>
                             </a>
@@ -67,7 +66,7 @@
                                 <div class="item-info">
                                     <div class="headline titulo t1">Liverpool</div>
                                     <div class="line"></div>
-                                    <div class="date">28 de Enero<br>4300 €</div>
+                                    <div class="text date">28 de Enero<br>4300 €</div>
                                 </div>
                                 <div class="mask"></div>
                             </a>
@@ -78,17 +77,69 @@
                                 <div class="item-info">
                                     <div class="headline titulo t1">Helsinki</div>
                                     <div class="line"></div>
-                                    <div class="date">15 de Febrero<br>2300 €</div>
+                                    <div class="text date">15 de Febrero<br>2300 €</div>
                                 </div>
                                 <div class="mask"></div>
                             </a>
                             <div id="img_hels" class="item-img"></div>
                         </div>
+                        <div class="item item-type-line">
+                            <a class="item-hover">
+                                <div class="item-info">
+                                    <div class="headline titulo t1">Rapa Nui</div>
+                                    <div class="line"></div>
+                                    <div class="text date">15 de Febrero<br>3300 €</div>
+                                </div>
+                                <div class="mask"></div>
+                            </a>
+                            <div id="img_rapa" class="item-img"></div>
+                        </div>
+                        <div class="item item-type-line">
+                            <a class="item-hover">
+                                <div class="item-info">
+                                    <div class="headline titulo t1">Singapur</div>
+                                    <div class="line"></div>
+                                    <div class="text date">15 de Febrero<br>3300 €</div>
+                                </div>
+                                <div class="mask"></div>
+                            </a>
+                            <div id="img_singapur" class="item-img"></div>
+                        </div>
                     </div>                   
                     
                 </article>
-                <aside id="lado">
+                <aside id="lado" class="menuAnimacion">                      
+                    <a class="opcionMenuAnimacion" href="http://www.delicious.com/">
+                        <div id="delicious" class="imagen enlaceMenuAnimacion"></div>
+                    </a>
                     
+                    <a class="opcionMenuAnimacion" href="http://digg.com/">
+                        <div id="digg" class="imagen enlaceMenuAnimacion"></div>
+                    </a>
+                    
+                    <a class="opcionMenuAnimacion" href="http://www.facebook.com/">
+                        <div id="facebook" class="imagen enlaceMenuAnimacion"></div>
+                    </a>
+                    
+                    <a class="opcionMenuAnimacion" href="http://www.flickr.com/">
+                        <div id="flickr" class="imagen enlaceMenuAnimacion"></div>
+                    </a>
+                    
+                    <a class="opcionMenuAnimacion" href="http://www.linkedin.com/">
+                        <div id="linkedin" class="imagen enlaceMenuAnimacion"></div>
+                    </a>
+                    
+                    <a class="opcionMenuAnimacion" href="http://www.reddit.com/">
+                        <div id="reddit" class="imagen enlaceMenuAnimacion"></div>
+                    </a>                    
+                    
+                    <a class="opcionMenuAnimacion" href="http://feeds2.feedburner.com/marcofolio">
+                        <div id="rss" class="imagen enlaceMenuAnimacion"></div>
+                    </a>
+                    
+                    <a class="opcionMenuAnimacion" href="http://twitter.com/">
+                        <div id="twitter" class="imagen enlaceMenuAnimacion"></div>
+                    </a>   
                 </aside>
             </section>
 
@@ -96,21 +147,18 @@
                 <div class="margenTexto centrarVertical">   
                     <div id="info">
                         <div class="centrarVertical">
-                            <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fddmontal.sytes.net%2Fasir%2Fagencia%2F">
+                            <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fdavidmasir.esy.es%2Fstarbright%2F&AMP;charset=%28detect+automatically%29&AMP;doctype=Inline&AMP;group=0">
                                 <img id="html5logo"
-                                     src="imagenes/html5-badge-h-css3.png" 
-                                     alt="HTML5 Powered with CSS3 / Styling" 
-                                     title="HTML5 Powered with CSS3 / Styling"
-                                     />
+                                    src="imagenes/html5-badge.png"
+                                    alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics" 
+                                    title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics"/>
                             </a>
                         </div>
                         <div class="centrarVertical">
                             <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                                <img id="csslogo"
-                                     src="imagenes/vcss.gif"
-                                     alt="Valid CSS!"
-                                     title="Valid CSS!"
-                                    />
+                                <img id="csslogo" style="border:0;width:88px;height:31px"
+                                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                    alt="Valid CSS!" />
                             </a>
                         </div>
                     </div>
@@ -119,7 +167,7 @@
                             <span class="girar180">
                                 &COPY;
                             </span>
-                            2014 David Montalvillo Ramos
+                            2015 David Montalvillo Ramos
                             <br>
                             <span class="subtexto">
                                 Software con licencia <a href="licencias/GPL2.txt">GPL</a>

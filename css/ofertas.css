@@ -15,8 +15,33 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 */
+
 /* 
-    Created on : 09-Jan-2015, 23:57:00
+    Created on : 09-Jan-2015, 23:57:17
     Author     : David
 */
 
+
+#img_milan {
+    background-image: url("../imagenes/milan.jpg");    
+}
+
+#img_londres {
+    background-image: url("../imagenes/londres.jpg");    
+}
+
+#img_teide {
+    background-image: url("../imagenes/teide.jpg");    
+}
+
+#img_paris {
+    background-image: url("../imagenes/paris.jpg");    
+}
+
+#img_santorini {
+    background-image: url("../imagenes/isla-santorini.jpg");
+}
+
+#img_finisterre {
+    background-image: url("../imagenes/finisterre.jpg");
+}

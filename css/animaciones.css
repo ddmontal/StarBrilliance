@@ -1,0 +1,203 @@
+/*
+Copyright (C) 2015 David
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+/* 
+    Created on : 09-Jan-2015, 23:03:31
+    Author     : David
+*/
+
+/*
+========================================
+Animacion menu
+========================================
+*/
+
+.menuAnimacion .enlaceMenuAnimacion { 					
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.menuAnimacion:hover .enlaceMenuAnimacion {
+            opacity: 0.2;
+}
+
+.menuAnimacion:hover .opcionMenuAnimacion:hover .enlaceMenuAnimacion {
+            opacity: 0.5;
+}
+
+.menuAnimacion:hover .opcionMenuAnimacion:hover .enlaceMenuAnimacion:hover {
+            opacity: 1;
+}
+
+/*
+========================================
+Animacion globo
+http://www.cssblog.es/crear-un-globo-rotando-en-3d-con-css3/
+========================================
+*/
+.globe-container {
+    margin:0 auto;
+    margin-top: 2rem;
+    width:92px;
+    height:92px;
+    border-radius: 50px;
+    overflow: hidden;
+    background:url(../imagenes/earthMap_92h.png) top left no-repeat;
+    -webkit-animation: rotate 10s infinite linear;
+    -moz-animation: rotate 10s infinite linear;
+    -ms-animation: rotate 10s infinite linear;
+    box-shadow: 0 0 0.5rem #333;
+}
+
+.globe {
+    position:absolute;
+    display: table;
+    width:92px;
+    height:92px;
+    background:url(../imagenes/shadow_highlight.png) top left no-repeat;
+}
+
+/*@-webkit-keyframes rotate{
+    0% {
+        background-position:0px 0px;
+    }
+    100% {
+        background-position:-160px 0px;
+    }
+}
+
+@-ms-keyframes rotate{
+    0% {
+        background-position:0px 0px;
+    }
+    100% {
+        background-position:-160px 0px;
+    }
+}
+@-moz-keyframes rotate{
+    0% {
+        background-position:0px 0px;
+    }
+    100% {
+        background-position:-160px 0px;
+    }
+}*/
+
+/*
+========================================
+Animacion thumbnails
+http://www.queness.com/post/16216/create-different-styles-of-hover-effects-with-css3-only
+========================================
+*/
+
+.item {
+    text-align: center;
+    float: left;
+    margin: 0.5rem;
+    position: relative;		
+}
+
+.item,
+.item-hover,
+.item-hover .mask,
+.item-img,
+.item-info {	
+    width: 20vw;
+    height: 15vh;
+    min-width: 250px;
+    min-height: 175px;
+}
+
+.item-hover,
+.item-hover .mask,
+.item-img { 
+    position:absolute; 
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2vh #333;
+    top: 0;
+    left: 0;			
+}			
+
+.item-type-line .item-hover {	
+    z-index: 100;	
+    transition: all 300ms ease;	
+    cursor: pointer;						
+    display: table;    
+    text-decoration: none;
+    text-align: center;
+}
+
+.item-type-line .item-info {
+    z-index: 10;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 5;				 					
+}
+
+.item-type-line .item-info .headline {
+    font-size: 1.8rem;	
+    color: rgba(255,255,255,255);
+    text-shadow: 0.1rem 0.1rem 0.2rem #000;			
+}
+
+.item-type-line .item-info .line {
+    height: 1px;
+    width: 0%;
+    margin: 0.7rem auto;
+    background-color:#ffffff;
+    transition: all 500ms linear;
+}
+
+.item-type-line .item-info .text {
+    font-size: 0.7rem;
+    overflow: hidden;
+    padding: 0.1rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(200,200,200,0);
+}
+.item-type-line .item-info .date {
+    font-size: 1rem;
+}
+
+.item-type-line .item-hover .text {    
+    color: rgba(255,255,255,0);    
+    transition: all 400ms ease;
+}
+
+.item-type-line .item-hover:hover .line {
+    width: 60%;
+}
+
+.item-type-line:hover .mask {
+    background-color: #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    opacity: 0.6;
+    z-index: 0;
+    transition: all 500ms ease;	
+}
+
+.item-type-line .item-hover:hover {
+    color: #fff;
+}
+
+.item-type-line .item-hover:hover .text {    
+    color: rgba(255,255,255,255);
+    text-shadow: 0.1rem 0.1rem 0.2rem #000;
+}
+

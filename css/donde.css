@@ -26,14 +26,14 @@ body {
 }
 
 #datosDonde {
-    float: left;
+    /*float: left;*/
     clear: both;
-    width: 35%;
+    width: 40%;
 }
 
 #mapa {
-    float: right;
-    width: 400px;
-    height: 300px;        
+    /*float: left;*/
+    width: 350px;
+    height: 250px;        
 }
 

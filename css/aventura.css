@@ -20,3 +20,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
     Author     : David
 */
 
+#video {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2vh #333;
+}

@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-Jan-2015, 17:41:40
+    Author     : david
+*/
+
+#img_boston {    
+    background-image: url("../imagenes/boston-skyline.jpg");	
+}
+
+#img_hels {
+    background-image: url("../imagenes/helsinki-skyline.jpg");  
+}
+
+#img_liv {
+    background-image: url("../imagenes/liverpool-skyline.jpg"); 
+}
+
+#img_toron {
+    background-image: url("../imagenes/toronto-skyline.jpg");    
+}
+
+#img_rapa {
+    background-image: url("../imagenes/rapa-nui.jpg");    
+}
+
+#img_singapur {
+    background-image: url("../imagenes/singapore.jpg");    
+}

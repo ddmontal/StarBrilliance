@@ -1,95 +1,119 @@
-* {    
-}
-
+/*
+Definición de fuentes para el texto.
+Se utiliza archivos .woff ya que los soporta cualquier navegador moderno.
+*/
 @font-face {
     font-family:Comfortaa-Bold;
-    src: url("../ttf/Comfortaa-Bold.ttf");
+    src: url("../fuentes/Comfortaa-bold.woff");
 }
 
 @font-face {
     font-family:Comfortaa-Light;
-    src: url("../ttf/Comfortaa-Light.ttf");
+    src: url("../fuentes/Comfortaa-Light.woff");
 }
 
 @font-face {
     font-family:Raleway;
-    src: url("../ttf/Raleway-Medium.ttf");
+    src: url("../fuentes/Raleway-Medium.woff");
 }
 
 body {
     background-color: #FFF;
-}
-
-/*Para centrado vertical de elementos.*/
-.CentradoVertical {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-
-#pagina {
     height: 100%;
-    min-height: 650px;
+}
+
+.CentradoVertical {
+    padding: 0.5% 10px;
+}
+
+/*
+Estilo base de la página.
+*/
+#pagina {
     width: 70%;
     min-width: 920px;
+    height: 100%;
     margin: 0px auto;
     background-color: #EEEEEE;
-    box-shadow: 0px 0px 26px 5px #BABABA;
+    box-shadow: 0px 0px 18px 4px #BABABA;
     border-radius: 5px;
-}
-
-/*Clase base para el contenido de la estructura de la página*/
-.base {
-    padding: 10px;
-    overflow: hidden;
 }
 
 header {
     height: 12%;
-    min-height: 78px;    
-    background-color: transparent;
+    min-height: 78px; 
     font-size: 28px;
     font-family: "Comfortaa-Bold", sans-serif; 
     margin: 0px;
 }
 
-#titulo {
-    float: left;
-    margin: 0;
-    text-align: center;
-    
+header div {
+    height: 100%;
+    padding:  1% 0;
 }
 
+#titulo {  
+    min-height: 55px;
+    background-color: red;
+    display: table;
+}
+
+#titulo p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*
+Bloque que contiene la imágen de logotipo.
+*/
 #logo {
     float: left;
-    margin: 0;
-    width: 15%;
-    height: 90%;
-    background-image: url("../imagenes/logo_256.png");
+    height: 100%;
+    min-height: 55px;
+    width: 10%;
+    overflow: hidden;
+    background-image: url(../imagenes/logo_276.png);
     background-position: center;
-    background-size:cover;
     background-repeat: no-repeat;
+    background-size: contain;
+    display: table;
+    text-align: center;
 }
+
 
 nav {
     height: 5%;
     min-height: 32px;
+    width: 95%;
     background-color:#555;
     border-radius: 4px;
     font-size: 18px;
     font-family: "Comfortaa-Bold", sans-serif;
-    margin: 0px;
+    margin: 0px auto;  
 }
 
 #menu {
+    
 }
 
-#menu div {
+/*
+Bloques que forman el menú
+*/
+#menu li {    
     display: inline-block;
-    margin-right: 15px;
+    padding:  0.5% 0;
+    margin-right: 1%;
 }
 
+#menu ul {    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Enlaces del menú.
+*/
 #menu a {
     text-decoration: none;
     color: #FFFFFF;
@@ -129,6 +153,7 @@ aside {
 }
 
 footer {
+    position: relative;
     height: 7%;
     min-height: 46px;
     font-size: 13px;
@@ -136,16 +161,22 @@ footer {
 }
 
 #autor{
-    float: left;
+    float: left;    
 }
 
 #info {
-    float:right;
+    float: right;
 }
 
+/*
+Gira el contenido del bloque.
+Para poder poner el simbolo de copyleft (&copy; al reves).
+*/
 #cl {
+    font-family: sans-serif;
     display: inline-block;
     -moz-transform: rotate(-180deg);
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }
+
